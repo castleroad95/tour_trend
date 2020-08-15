@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_214fba514ba441afbdfe2a0afdd6b0d8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_214fba514ba441afbdfe2a0afdd6b0d8" ></div>
+        
+</body>
+<script>    
+    
+            var map_214fba514ba441afbdfe2a0afdd6b0d8 = L.map(
+                "map_214fba514ba441afbdfe2a0afdd6b0d8",
+                {
+                    center: [37.5599, 126.9858],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_134c90c1290440608777db83509722cf = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+            var circle_marker_334a9b15921f42efbebb9127f7ceb713 = L.circleMarker(
+                [37.5599, 126.9858],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.800000000000008, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_7c2b308c1a474f9baeb06be4d522db2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad5bfbb48d02404b81c65d47db16b576 = $(`<div id="html_ad5bfbb48d02404b81c65d47db16b576" style="width: 100.0%; height: 100.0%;">명동</div>`)[0];
+            popup_7c2b308c1a474f9baeb06be4d522db2f.setContent(html_ad5bfbb48d02404b81c65d47db16b576);
+        
+
+        circle_marker_334a9b15921f42efbebb9127f7ceb713.bindPopup(popup_7c2b308c1a474f9baeb06be4d522db2f)
+        ;
+
+        
+    
+    
+            var circle_marker_2b0cddb0df394db8a9fe81d8c0bd0da2 = L.circleMarker(
+                [37.5705, 127.0078],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.566666666666663, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_a9de06f64b8b45cca1dfd6e38fdc82b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2dac1bb538743ebae6162cfe920e441 = $(`<div id="html_c2dac1bb538743ebae6162cfe920e441" style="width: 100.0%; height: 100.0%;">동대문시장</div>`)[0];
+            popup_a9de06f64b8b45cca1dfd6e38fdc82b7.setContent(html_c2dac1bb538743ebae6162cfe920e441);
+        
+
+        circle_marker_2b0cddb0df394db8a9fe81d8c0bd0da2.bindPopup(popup_a9de06f64b8b45cca1dfd6e38fdc82b7)
+        ;
+
+        
+    
+    
+            var circle_marker_6cf321c774c44cf2b88f4d0949a919c7 = L.circleMarker(
+                [37.5595, 126.9777],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.862222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_6dada1cddf84495eac31048ea7afc923 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd3503d4cdca43c3a52f1d3030bf52e2 = $(`<div id="html_dd3503d4cdca43c3a52f1d3030bf52e2" style="width: 100.0%; height: 100.0%;">남대문시장</div>`)[0];
+            popup_6dada1cddf84495eac31048ea7afc923.setContent(html_dd3503d4cdca43c3a52f1d3030bf52e2);
+        
+
+        circle_marker_6cf321c774c44cf2b88f4d0949a919c7.bindPopup(popup_6dada1cddf84495eac31048ea7afc923)
+        ;
+
+        
+    
+    
+            var circle_marker_bb2087f5d02246629bcb8092b408cc86 = L.circleMarker(
+                [37.5806, 126.9769],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.515555555555554, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_4f5a5f73b26341dba7b71edd153018f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77e416e5f421465d865495bf7304ad05 = $(`<div id="html_77e416e5f421465d865495bf7304ad05" style="width: 100.0%; height: 100.0%;">경복궁</div>`)[0];
+            popup_4f5a5f73b26341dba7b71edd153018f7.setContent(html_77e416e5f421465d865495bf7304ad05);
+        
+
+        circle_marker_bb2087f5d02246629bcb8092b408cc86.bindPopup(popup_4f5a5f73b26341dba7b71edd153018f7)
+        ;
+
+        
+    
+    
+            var circle_marker_a538d7a4493645e19ec94b4c835e2716 = L.circleMarker(
+                [37.5513, 126.9881],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.540000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_55b1105c477c4dd6a4a935d86aaffb24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f28adf12ea404100bf6e85e064660647 = $(`<div id="html_f28adf12ea404100bf6e85e064660647" style="width: 100.0%; height: 100.0%;">남산타워</div>`)[0];
+            popup_55b1105c477c4dd6a4a935d86aaffb24.setContent(html_f28adf12ea404100bf6e85e064660647);
+        
+
+        circle_marker_a538d7a4493645e19ec94b4c835e2716.bindPopup(popup_55b1105c477c4dd6a4a935d86aaffb24)
+        ;
+
+        
+    
+    
+            var circle_marker_e8e2c1ca1def4713827f91382ead879a = L.circleMarker(
+                [37.5714, 126.9861],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.124444444444444, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_3d406bd0bcd24c8ba3803298d8de73fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbea255bc2b34a688ad8be1fdbcae126 = $(`<div id="html_cbea255bc2b34a688ad8be1fdbcae126" style="width: 100.0%; height: 100.0%;">인사동</div>`)[0];
+            popup_3d406bd0bcd24c8ba3803298d8de73fc.setContent(html_cbea255bc2b34a688ad8be1fdbcae126);
+        
+
+        circle_marker_e8e2c1ca1def4713827f91382ead879a.bindPopup(popup_3d406bd0bcd24c8ba3803298d8de73fc)
+        ;
+
+        
+    
+    
+            var circle_marker_423d46c0de584438a3a5416982f8488f = L.circleMarker(
+                [37.5247, 126.9801],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.380000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_caaac49e6cab48729467299aaada598c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec081686c21a4fad92402c2735eaea54 = $(`<div id="html_ec081686c21a4fad92402c2735eaea54" style="width: 100.0%; height: 100.0%;">국립박물관</div>`)[0];
+            popup_caaac49e6cab48729467299aaada598c.setContent(html_ec081686c21a4fad92402c2735eaea54);
+        
+
+        circle_marker_423d46c0de584438a3a5416982f8488f.bindPopup(popup_caaac49e6cab48729467299aaada598c)
+        ;
+
+        
+    
+    
+            var circle_marker_df94f71c131542b39e0f6d398486a861 = L.circleMarker(
+                [37.5131, 127.1026],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.01777777777778, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_f8b4a773b94946aba7bbc105c4bd762c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93854706e93143a5b8c88bad42fb1f28 = $(`<div id="html_93854706e93143a5b8c88bad42fb1f28" style="width: 100.0%; height: 100.0%;">롯데타워</div>`)[0];
+            popup_f8b4a773b94946aba7bbc105c4bd762c.setContent(html_93854706e93143a5b8c88bad42fb1f28);
+        
+
+        circle_marker_df94f71c131542b39e0f6d398486a861.bindPopup(popup_f8b4a773b94946aba7bbc105c4bd762c)
+        ;
+
+        
+    
+    
+            var circle_marker_5434a8b2fb014c19a8701665237257d6 = L.circleMarker(
+                [37.557, 126.9241],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.677777777777777, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_c5b6bff86251481885d5fff9db024bef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdfc5615902d483aae75239a9c9a4e02 = $(`<div id="html_fdfc5615902d483aae75239a9c9a4e02" style="width: 100.0%; height: 100.0%;">강남</div>`)[0];
+            popup_c5b6bff86251481885d5fff9db024bef.setContent(html_fdfc5615902d483aae75239a9c9a4e02);
+        
+
+        circle_marker_5434a8b2fb014c19a8701665237257d6.bindPopup(popup_c5b6bff86251481885d5fff9db024bef)
+        ;
+
+        
+    
+    
+            var circle_marker_524e1e37250f42789b415e5a7b2cdcd8 = L.circleMarker(
+                [37.4981, 127.0276],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.175555555555556, "stroke": true, "weight": 3}
+            ).addTo(map_214fba514ba441afbdfe2a0afdd6b0d8);
+        
+    
+        var popup_703e5d8e35374b86a41c252f11b6c501 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb4bf295c13b483188db35ed3978920d = $(`<div id="html_eb4bf295c13b483188db35ed3978920d" style="width: 100.0%; height: 100.0%;">홍대</div>`)[0];
+            popup_703e5d8e35374b86a41c252f11b6c501.setContent(html_eb4bf295c13b483188db35ed3978920d);
+        
+
+        circle_marker_524e1e37250f42789b415e5a7b2cdcd8.bindPopup(popup_703e5d8e35374b86a41c252f11b6c501)
+        ;
+
+        
+    
+</script>
