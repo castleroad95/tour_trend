@@ -38,9 +38,9 @@ def unify_columns(file):
 # 연도별, 국가별 서울관광지 방문율 시각화
 def countries_visit_seoul(file,year):
     
-    select_col=['명동','동대문시장','남산타워','롯데타워','홍대','강남']
     select_index=['미국','호주','캐나다','일본','중국','태국','영국','프랑스','독일']
-    df_top5=file[select_col].loc[select_index]
+    df_top5=file.loc[select_index]
+    df_top5=df_top5.drop(columns=['기간','한국여행중서울방문'])
     
     matplotlib.rcParams['font.family']='Malgun Gothic'
     matplotlib.rcParams['axes.unicode_minus']=False
@@ -54,6 +54,7 @@ def countries_visit_seoul(file,year):
     plot_top5=df_top5T.plot()
     #반만 나오던 xticks값 나오게한 신의 한줄
     plt.xticks(range(len(df_top5T.index)), df_top5T.index)
+    
     plt.xticks(rotation=45)
     plot_top5.set_xlabel('서울 관광지')
     plot_top5.set_ylabel('방문율(%)')
@@ -153,7 +154,7 @@ def maping_seoul(file,year):
     #for문을 사용하여 서울명소를 지도에 각각의 위도경도에 맞게, 크기는 세계평균방문율에 맞게 설정
     for i in final_chart.index:
     
-        folium.CircleMarker([final_chart['lat'][i],final_chart['long'][i]],radius=final_chart['세계평균'][i]*0.4,
+        folium.CircleMarker([final_chart['lat'][i],final_chart['long'][i]],radius=final_chart['세계평균'][i]*0.5,
                         
                             color='#3186cc',fill_color='#3186cc',popup=(final_chart['서울관광지'][i])).add_to(seoul_map)
     #html파일로 저장    
