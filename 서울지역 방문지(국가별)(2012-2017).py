@@ -42,6 +42,7 @@ def countries_visit_seoul(file,year):
     df_top5=file.loc[select_index]
     df_top5=df_top5.drop(columns=['기간','한국여행중서울방문'])
     
+    # matplotlib 한글 설정
     matplotlib.rcParams['font.family']='Malgun Gothic'
     matplotlib.rcParams['axes.unicode_minus']=False
 
